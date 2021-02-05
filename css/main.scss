@@ -1,0 +1,27 @@
+.landing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+
+    .landing-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5vw;
+        line-height: 1.8;
+        width: 100%;
+    }
+    
+    .landing-img {
+        height: 50%;
+    }
+}
+
+.highlight {
+    display: inline;
+    background-color: #fef67c;
+    border-radius: 10px;
+}
