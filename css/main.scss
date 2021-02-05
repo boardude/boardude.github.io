@@ -1,3 +1,4 @@
+/****** LANDING ******/
 .landing {
     display: flex;
     flex-direction: row;
@@ -24,4 +25,12 @@
     display: inline;
     background-color: #fef67c;
     border-radius: 10px;
+}
+
+/****** MEDIA QUERIES *******/
+/* If viewport becomes too wide, .landing-text font size responds to viewport height*/
+@media (min-aspect-ratio: 880/324) {
+    .landing .landing-text {
+        font-size: 14vh;
+    }
 }
