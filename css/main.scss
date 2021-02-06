@@ -1,23 +1,22 @@
 /****** LANDING ******/
 .landing {
+    width: 100vw;
     height: 100vh;
-    position: relative;
+    display: flex;
 }
 
 .landing-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 5vw;
     line-height: 1.8;
-    width: 100%;
     text-align: center;
-    position: absolute;
-    top: 50%;          
-    transform: translate(0, -62.5%)
+    margin: auto;
 }
 
-.landing-img {
-    height: 50%;
-}
+
+/*.landing-logo {
+
+}*/
 
 .highlight {
     display: inline;
