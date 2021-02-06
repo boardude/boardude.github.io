@@ -3,6 +3,8 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .landing-text {
@@ -13,9 +15,17 @@
   margin: auto;
 }
 
-/*.landing-logo {
+.landing-logo-container {
+  width: 5vw;
+  height: 5vw;
+  margin: auto;
+}
 
-}*/
+.landing-logo {
+  width: 100%;
+  height: auto;
+}
+
 .highlight {
   display: inline;
   border-radius: 10px;
