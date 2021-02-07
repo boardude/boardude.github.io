@@ -15,6 +15,7 @@
   line-height: 1.8;
   text-align: center;
   margin: auto;
+  animation: fadein 2s;
 }
 
 .highlight {
@@ -24,6 +25,34 @@
 }
 
 /****** scroll icon ******/
+.scroll-icon-dot {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background: black;
+  height: 0.5em;
+  width: 0.5em;
+  top: 40%;
+  margin-left: -0.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll 3s ease-out infinite;
+  animation: fadein 2s;
+}
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: 0.25em solid black;
+  border-radius: 1em;
+  margin-bottom: 50%;
+  animation: fadein 2s;
+}
+
+/****** KEYFRAMES ******/
 @keyframes scroll {
   0% {
     transform: translateY(0);
@@ -41,31 +70,14 @@
     opacity: 0;
   }
 }
-.scroll-icon-dot {
-  display: block;
-  position: absolute;
-  left: 50%;
-  background: black;
-  height: 0.5em;
-  width: 0.5em;
-  top: 40%;
-  margin-left: -0.25em;
-  border-radius: 50%;
-  transform-origin: top center;
-  backface-visibility: hidden;
-  animation: scroll 3s ease-out infinite;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-.scroll-icon {
-  display: block;
-  position: relative;
-  height: 3em;
-  width: 1.5em;
-  border: 0.25em solid black;
-  border-radius: 1em;
-  margin-bottom: 50%;
-}
-
 /****** MEDIA QUERIES *******/
 /* If viewport becomes too wide, .landing-text font size responds to viewport height*/
 @media (min-aspect-ratio: 880/324) {
