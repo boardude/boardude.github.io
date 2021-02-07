@@ -28,7 +28,7 @@
 /****** scroll icon ******/
 .scroll-icon-container {
   position: fixed;
-  bottom: 2vh;
+  bottom: 0.5vh;
 }
 
 .scroll-icon-dot {
@@ -104,6 +104,11 @@
 @media (max-aspect-ratio: 14/9) {
   .landing-text-container {
     width: 80%;
+  }
+
+  .scroll-icon-container {
+    position: fixed;
+    bottom: 1.5vh;
   }
 }
 
