@@ -101,7 +101,7 @@
   }
 }
 /* For portrait viewports */
-@media (max-aspect-ratio: 14/9) {
+@media (max-aspect-ratio: 12/9) {
   .landing-text-container {
     width: 80%;
   }
