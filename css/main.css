@@ -8,10 +8,11 @@
   justify-content: center;
 }
 
+/****** logo ******/
 /****** centre text ******/
 .landing-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 5vw;
+  font-size: 5vmax;
   line-height: 1.8;
   text-align: center;
   margin: auto;
@@ -25,6 +26,11 @@
 }
 
 /****** scroll icon ******/
+.scroll-icon-container {
+  position: fixed;
+  bottom: 2vh;
+}
+
 .scroll-icon-dot {
   display: block;
   position: absolute;
@@ -92,6 +98,12 @@
 
   .scroll-icon-dot {
     display: none;
+  }
+}
+/* For portrait viewports */
+@media (max-aspect-ratio: 14/9) {
+  .landing-text-container {
+    width: 80%;
   }
 }
 
