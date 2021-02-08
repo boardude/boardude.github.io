@@ -25,6 +25,13 @@
 .landing-highlight {
     border-radius: 10px;
     background-color: #fcf4dc;
+    color: inherit;
+    text-decoration: none;
+}
+
+.landing-highlight:hover {
+    transition: color 0.3s ease-out;
+    color: #8181ff;
 }
 
 /****** scroll icon ******/  
