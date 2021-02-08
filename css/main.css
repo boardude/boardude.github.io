@@ -90,16 +90,8 @@
 }
 
 /* For portrait viewports */
-@media (max-aspect-ratio: 12/9) {
+@media (max-aspect-ratio: 14/9) {
     .landing-text-container {
         width: 90%;
-    }
-
-    .scroll-icon {
-        font-size: 2vmax;
-    }
-
-    .scroll-icon-dot {
-        font-size: 2vmax;
     }
 }
