@@ -17,6 +17,7 @@
   text-align: center;
   margin: auto;
   animation: fadein 2s;
+  height: 80%;
 }
 
 .highlight {
@@ -28,7 +29,7 @@
 /****** scroll icon ******/
 .scroll-icon-container {
   position: absolute;
-  bottom: 0.5vh;
+  bottom: 2vh;
 }
 
 .scroll-icon-dot {
@@ -106,9 +107,12 @@
     width: 90%;
   }
 
-  .scroll-icon-container {
-    position: absolute;
-    bottom: 1.5vh;
+  .scroll-icon {
+    font-size: 2vmax;
+  }
+
+  .scroll-icon-dot {
+    font-size: 2vmax;
   }
 }
 
