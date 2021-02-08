@@ -12,6 +12,7 @@
 .landing-text-container {
     margin: auto;
     animation: fadein 2s;
+    width: 95%;
 }
 
 .landing-text {
@@ -92,9 +93,9 @@
     }
 }
 
-/* For portrait viewports */
-@media (max-aspect-ratio: 14/9) {
-    .landing-text-container {
-        width: 95%;
+/* To prevent text from wrapping on narrow displays*/
+@media (max-aspect-ratio: 654/1106) {
+    .landing-text {
+        font-size: 8vw;
     }
 }
