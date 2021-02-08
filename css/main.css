@@ -96,6 +96,6 @@
 /* For portrait viewports */
 @media (max-aspect-ratio: 14/9) {
     .landing-text-container {
-        width: 90%;
+        width: 95%;
     }
 }
