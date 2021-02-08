@@ -10,7 +10,8 @@
 
 /****** centre text ******/
 .landing-text-container {
-    display: flex;
+    margin: auto;
+    animation: fadein 2s;
 }
 
 .landing-text {
@@ -18,8 +19,6 @@
     font-size: 5vmax;
     line-height: 1.8;
     text-align: center;
-    margin: auto;
-    animation: fadein 2s;
 }
 
 .highlight {
@@ -29,11 +28,6 @@
 }
 
 /****** scroll icon ******/  
-.scroll-icon-container {
-    position: absolute;
-    bottom: 2vh;
-}
-
 .scroll-icon-dot {
     display: block;
     position: absolute;
@@ -107,9 +101,5 @@
 
     .scroll-icon-dot {
         font-size: 2vmax;
-    }
-
-    .scroll-icon-container {
-        bottom: 1vh;
     }
 }
