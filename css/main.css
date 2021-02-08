@@ -107,7 +107,7 @@
   }
 
   .scroll-icon-container {
-    position: fixed;
+    position: absolute;
     bottom: 1.5vh;
   }
 }
