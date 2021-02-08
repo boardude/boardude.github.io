@@ -1,122 +1,115 @@
 /****** LANDING ******/
 .landing {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/****** logo ******/
 /****** centre text ******/
+.landing-text-container {
+    display: flex;
+}
+
 .landing-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5vmax;
-  line-height: 1.8;
-  text-align: center;
-  margin: auto;
-  animation: fadein 2s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vmax;
+    line-height: 1.8;
+    text-align: center;
+    margin: auto;
+    animation: fadein 2s;
 }
 
 .highlight {
-  display: inline;
-  border-radius: 10px;
-  background-color: #fcf4dc;
+    display: inline;
+    border-radius: 10px;
+    background-color: #fcf4dc;
 }
 
-/****** scroll icon ******/
+/****** scroll icon ******/  
 .scroll-icon-container {
-  position: absolute;
-  bottom: 2vmin;
+    position: absolute;
+    bottom: 2vh;
 }
 
 .scroll-icon-dot {
-  display: block;
-  position: absolute;
-  left: 50%;
-  background: black;
-  height: 0.5em;
-  width: 0.5em;
-  top: 40%;
-  margin-left: -0.25em;
-  border-radius: 50%;
-  transform-origin: top center;
-  backface-visibility: hidden;
-  animation: scroll 3s ease-out infinite;
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: black;
+    height: .5em;
+    width: .5em;
+    top: 40%;
+    margin-left: -.25em;
+    border-radius: 50%;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    animation: scroll 3s ease-out infinite;
 }
 
 .scroll-icon {
-  display: block;
-  position: relative;
-  height: 3em;
-  width: 1.5em;
-  border: 0.25em solid black;
-  border-radius: 1em;
-  margin-bottom: 50%;
-  animation: fadein 2s;
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .25em solid black;
+    border-radius: 1em;
+    margin-bottom: 50%;
+    animation: fadein 2s;
 }
 
 /****** KEYFRAMES ******/
 @keyframes scroll {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    transform: translateY(-0.75em);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 0;
-  }
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(-.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
 }
+
 @keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translate(0, 0.8em);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+    from {
+        opacity:0;
+        transform: translate(0, 0.8em);
+    }
+    to {
+        opacity:1;
+        transform: translate(0, 0);
+    }
 }
+
 /****** MEDIA QUERIES *******/
 /* If viewport becomes too wide, .landing-text font size responds to viewport height*/
 @media (min-aspect-ratio: 880/324) {
-  .landing-text {
-    font-size: 13.5vh;
-  }
+    .landing-text {
+        font-size: 13.5vh;
+    }
 
-  .scroll-icon {
-    display: none;
-  }
+    .scroll-icon {
+        display: none;
+    }
 
-  .scroll-icon-dot {
-    display: none;
-  }
+    .scroll-icon-dot {
+        display: none;
+    }
 }
+
 /* For portrait viewports */
 @media (max-aspect-ratio: 12/9) {
-  .landing-text-container {
-    width: 90%;
-  }
+    .landing-text-container {
+        width: 90%;
+    }
 
-  .scroll-icon {
-    font-size: 2vmax;
-  }
+    .scroll-icon {
+        font-size: 2vmax;
+    }
 
-  .scroll-icon-dot {
-    font-size: 2vmax;
-  }
+    .scroll-icon-dot {
+        font-size: 2vmax;
+    }
 
-  .scroll-icon-container {
-    bottom: -2vh;
-  }
+    .scroll-icon-container {
+        bottom: 1vh;
+    }
 }
-
-/*# sourceMappingURL=main.css.map */
