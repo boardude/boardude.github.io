@@ -30,7 +30,7 @@
 }
 
 .landing-highlight:hover {
-    transition: color 0.3s ease-out;
+    transition: color 0.35s cubic-bezier(0.05, 0.53, 0.36, 0.95);
     color: #8181ff;
 }
 
