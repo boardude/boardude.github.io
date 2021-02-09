@@ -30,8 +30,8 @@
 }
 
 .landing-highlight:hover {
-    transition: color 0.35s ease-out;
-    color: #8181ff;
+    transition: color 0.3s ease-out;
+    color: skyblue;
 }
 
 /*
@@ -74,7 +74,7 @@
     display: block;
     background: red;
     border-radius: 50%; 
-    transition: 0.35s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .nametag:hover::before {
