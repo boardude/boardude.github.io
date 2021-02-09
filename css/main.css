@@ -25,13 +25,59 @@
 .landing-highlight {
     border-radius: 10px;
     background-color: #fcf4dc;
-    color: inherit;
+    color: royalblue;
     text-decoration: none;
 }
 
 .landing-highlight:hover {
     transition: color 0.35s cubic-bezier(0.05, 0.53, 0.36, 0.95);
     color: #8181ff;
+}
+
+/*
+.un{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    /*add those for opera and mozilla support*//*
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+   }
+   
+   .un:hover{
+    transition: 1s;
+    text-decoration-color: red;
+    
+    /*add those for opera and mozilla support*//*
+    -webkit-text-decoration-color: red;
+    -moz-text-decoration-color: red;
+   }
+*/
+/*
+.un {
+    border-bottom: .1em solid transparent;
+  }
+  
+.un:hover {
+    transition: border-bottom-color 0.5s linear;
+    border-bottom: .1em solid black; 
+}
+*/
+.un {
+    display: inline-block;
+}
+
+.un::before {
+    content: '';
+    width: 0px;
+    height: .1em;
+    display: block;
+    background: red;
+    transition: 0.35s;
+}
+
+.un:hover::before {
+    width: 100%;
 }
 
 /****** scroll icon ******/  
