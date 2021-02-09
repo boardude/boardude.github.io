@@ -24,14 +24,14 @@
 
 .landing-highlight {
     border-radius: .3em;
-    background-color: #fcf4dc;
+    
     color: royalblue;
     text-decoration: none;
 }
 
 .landing-highlight:hover {
     transition: 0.3s ease-out;
-    opacity: 0.7;
+    background-color: #fcf4dc;
 }
 
 /*
