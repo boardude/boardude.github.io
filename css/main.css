@@ -30,8 +30,8 @@
 }
 
 .landing-highlight:hover {
-    transition: color 0.3s ease-out;
-    color: skyblue;
+    transition: 0.3s ease-out;
+    opacity: 0.7;
 }
 
 /*
