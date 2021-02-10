@@ -39,7 +39,7 @@
     transition: background 0.2s ease-out;
 }
 
-.nametag:hover::before {
+.nametag:hover::before, .nametag:focus::before {
     border-radius: 0;
     background: transparent;
     width: 75%;
@@ -48,7 +48,7 @@
     color: red;
     animation: fadein 1s;
     margin: auto;
-}
+}   
 
 /****** modals ******/
 /* general modal style */
