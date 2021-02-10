@@ -34,19 +34,19 @@
     width: 2vw;
     height: 2vw;
     display: block;
-    background: red;
+    background-color: red;
     border-radius: 50%; 
-    transition: background 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
 }
 
 .nametag:hover::before, .nametag:focus::before {
     border-radius: 0;
-    background: transparent;
+    background-color: transparent;
     width: 75%;
     content: 'view my card';
     font-size: 0.25em;
     color: red;
-    animation: fadein 1s;
+    animation: fadeinandup-short 0.8s;
     margin: auto;
 }   
 
@@ -76,6 +76,10 @@
 }
 
 /****** scroll icon ******/  
+.scroll-icon-container {
+    animation: fadeinandup-long 2s;
+}
+
 .scroll-icon-dot {
     font-size: 5vmax;
     display: block;
@@ -115,12 +119,34 @@
 @keyframes fadein {
     from {
         opacity:0;
-        transform: translate(0, 0.8em);
     }
     to {
         opacity:1;
-        transform: translate(0, 0);
     }
+}
+
+@keyframes fadeinandup-short {
+    0% {
+        opacity:0;
+        transform: translate(0, 0.8em);
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0, 0);
+    } 
+}
+
+@keyframes fadeinandup-long {
+    0% {
+        opacity:0;
+        transform: translate(0, 2em);
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0, 0);
+    } 
 }
 
 /****** MEDIA QUERIES *******/
