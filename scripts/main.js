@@ -11,5 +11,5 @@ window.onclick = function(event) {
 /** specific rules **/
 // When the user clicks on the nametag, open a business card modal
 var showCard = function() {
-    document.getElementById("nametagInfo").style.display = "block";
+    document.getElementById("nametagInfo").style.display = "flex";
 }
