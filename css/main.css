@@ -46,7 +46,7 @@
     content: 'view my card';
     font-size: 0.25em;
     color: red;
-    animation: fadeinandup-short 0.8s;
+    animation: fadeinandup-nametag 0.8s;
     margin: auto;
 }   
 
@@ -77,7 +77,7 @@
 
 /****** scroll icon ******/  
 .scroll-icon-container {
-    animation: fadeinandup-long 2s;
+    animation: fadeinandup-scroll 2s;
 }
 
 .scroll-icon-dot {
@@ -125,9 +125,10 @@
     }
 }
 
-@keyframes fadeinandup-short {
+@keyframes fadeinandup-nametag {
     0% {
         opacity:0;
+        background-color: transparent;
         transform: translate(0, 0.8em);
     }
 
@@ -137,7 +138,7 @@
     } 
 }
 
-@keyframes fadeinandup-long {
+@keyframes fadeinandup-scroll {
     0% {
         opacity:0;
         transform: translate(0, 2em);
