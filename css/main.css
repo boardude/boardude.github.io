@@ -1,4 +1,8 @@
 /****** LANDING ******/
+.html {
+    font-size: 5vmax;
+}
+
 .landing {
     width: 100vw;
     height: 100vh;
@@ -22,45 +26,33 @@
     text-align: center;
 }
 
-.landing-highlight {
+.nametag {
+    display: inline-block;
     border-radius: .3em;
     color: royalblue;
     text-decoration: none;
 }
 
-.nametag {
-    display: inline-block;
-}
-
 .nametag::before {
     content: '';
-    width: .5em;
-    height: .5em;
+    font-size: 0;
+    width: 1.5rem;
+    height: 1.5rem;
     display: block;
     background: red;
     border-radius: 50%; 
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .nametag:hover::before {
-    height: .1em;
+    height: 0.25rem;
+    width: 75%;
     border-radius: .3em;
-}
-
-
-.nametag::after {
-    content: 'see my card';
-    font-size: 0;
-    color: red;
-    display: none;
-}
-
-.nametag:hover::after {
     content: 'see my card';
     font-size: 0.25em;
     color: red;
     display: block;
-    animation: fadein 0.5s;
+    animation: fadein 1s;
 }
 
 /****** modals ******/
@@ -142,6 +134,10 @@
     .landing-text {
         font-size: 13.5vh;
     }
+    
+    .html {
+        font-size: 13.5vh;
+    }
 
     .scroll-icon {
         font-size: 13.5vh;
@@ -157,6 +153,10 @@
 /* To prevent text from wrapping on narrow displays*/
 @media (max-aspect-ratio: 654/1106) {
     .landing-text {
+        font-size: 8vw;
+    }
+
+    .html {
         font-size: 8vw;
     }
 }
