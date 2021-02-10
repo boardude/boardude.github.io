@@ -24,45 +24,10 @@
 
 .landing-highlight {
     border-radius: .3em;
-    
     color: royalblue;
     text-decoration: none;
 }
 
-.landing-highlight:hover {
-    transition: 0.3s ease-out;
-    background-color: #fcf4dc;
-}
-
-/*
-.un{
-    text-decoration: underline;
-    text-decoration-color: transparent;
-
-    /*add those for opera and mozilla support*//*
-    -webkit-text-decoration-color: transparent;
-    -moz-text-decoration-color: transparent;
-   }
-   
-   .un:hover{
-    transition: 1s;
-    text-decoration-color: red;
-    
-    /*add those for opera and mozilla support*//*
-    -webkit-text-decoration-color: red;
-    -moz-text-decoration-color: red;
-   }
-*/
-/*
-.un {
-    border-bottom: .1em solid transparent;
-  }
-  
-.un:hover {
-    transition: border-bottom-color 0.5s linear;
-    border-bottom: .1em solid black; 
-}
-*/
 .nametag {
     display: inline-block;
 }
@@ -78,22 +43,25 @@
 }
 
 .nametag:hover::before {
-    width: 100%;
     height: .1em;
     border-radius: .3em;
 }
 
-/*
+
 .nametag::after {
-    display:block;
-    width: 10px;
-    height: .1em;;
-    background: black;
+    content: 'see my card';
+    font-size: 0;
+    color: red;
+    display: none;
 }
 
 .nametag:hover::after {
-    content: ''
-}*/
+    content: 'see my card';
+    font-size: 0.25em;
+    color: red;
+    display: block;
+    animation: fadein 0.5s;
+}
 
 /****** modals ******/
 /* general modal style */
@@ -113,10 +81,11 @@
 /* general modal content/box style */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border-radius: 1em;
-    width: 60vw; /* Could be more or less, depending on screen size */
+    width: 45vw; /* Could be more or less, depending on screen size */
+    height: 28.373vw;
 }
 
 /****** scroll icon ******/  
