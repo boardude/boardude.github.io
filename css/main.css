@@ -31,7 +31,6 @@
 
 .nametag::before {
     content: '';
-    font-size: 0;
     width: 2vw;
     height: 2vw;
     display: block;
@@ -41,6 +40,7 @@
 }
 
 .nametag:hover::before {
+    border-radius: 0;
     background: transparent;
     width: 75%;
     content: 'view my card';
