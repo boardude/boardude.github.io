@@ -1,8 +1,4 @@
 /****** LANDING ******/
-.html {
-    font-size: 5vmax;
-}
-
 .landing {
     width: 100vw;
     height: 100vh;
@@ -36,8 +32,8 @@
 .nametag::before {
     content: '';
     font-size: 0;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2vw;
+    height: 2vw;
     display: block;
     background: red;
     border-radius: 50%; 
@@ -45,7 +41,7 @@
 }
 
 .nametag:hover::before {
-    height: 0.25rem;
+    height: 0.3vw;
     width: 75%;
     border-radius: .3em;
     content: 'see my card';
@@ -134,10 +130,6 @@
     .landing-text {
         font-size: 13.5vh;
     }
-    
-    .html {
-        font-size: 13.5vh;
-    }
 
     .scroll-icon {
         font-size: 13.5vh;
@@ -153,10 +145,6 @@
 /* To prevent text from wrapping on narrow displays*/
 @media (max-aspect-ratio: 654/1106) {
     .landing-text {
-        font-size: 8vw;
-    }
-
-    .html {
         font-size: 8vw;
     }
 }
