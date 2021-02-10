@@ -118,21 +118,6 @@
     border-radius: 1em;
     width: 60vw; /* Could be more or less, depending on screen size */
 }
-  
-/* modal close button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.close:hover, 
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /****** scroll icon ******/  
 .scroll-icon-dot {
