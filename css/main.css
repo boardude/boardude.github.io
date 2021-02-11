@@ -108,6 +108,11 @@
     animation: fadein-nametag 0.5s;
 }
 
+#nametagSite:hover, #nametagName:hover {
+    color: royalblue;
+    transition: 0.25s;
+}
+
 #nametagBL {
     position: absolute;
     bottom: .5em;
@@ -154,7 +159,7 @@
     display: none;
     margin: auto;
     font-size: 1vw;
-    color: blue;
+    color:#009fa3;
     text-align: center;
     width: 100%;
     animation: fadein-tooltip 0.3s;
