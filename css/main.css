@@ -270,31 +270,65 @@
     }
 }
 
-/* On portrait displays, widen the nametag modal */
+/* On less wide displays, widen the nametag modal */
+@media (max-aspect-ratio: 10/7) {
+    #nametagCard {
+        width: 60vw;
+        height: 37.831vw;
+    }
+
+    /* multiply by 60/45 (new/original width) for all below */
+    #nametagName {
+        font-size: 8vw;
+    }
+
+    #nametagSite {
+        font-size: 2vw;
+    }
+
+    #nametagBL {
+        font-size: 6.6666666667vw;
+    }
+
+    #nametagTR {
+        font-size: 6.6666666667vw;
+    }
+
+    #nametagEmail, #nametagLI, #nametagGH {
+        width: 6vw;
+    }
+
+    .tooltip {
+        font-size: 1.33333333333vw;
+    } 
+}
+
+/* On portrait, widen the nametag modal */
 @media (max-aspect-ratio: 1/1) {
     #nametagCard {
         width: 80vw;
         height: 50.44vw;
     }
 
+     /* multiply by 80/45 (new/original width) for all below */
     #nametagName {
-        font-size: 10.6666667vw; /* multiply by 80/45 */
+        font-size: 10.6666667vw;
     }
 
     #nametagSite {
-        font-size: 2.66666667vw; /* multiply by 80/45 */
+        font-size: 2.66666667vw; 
     }
 
     #nametagBL {
-        font-size: 8.8888888889vw; /* multiply by 80/45 */
+        font-size: 8.8888888889vw;
     }
 
     #nametagTR {
-        font-size: 8.8888888889vw; /* multiply by 80/45 */
+        font-size: 8.8888888889vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 8vw; /* multiply by 80/45 */
+        width: 8vw; 
     }
 
     .tooltip {
