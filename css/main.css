@@ -50,7 +50,7 @@
     animation: fadein;
 }
 
-.nametag:hover::before, .nametag:focus::before {
+.nametag:hover::before, .nametag:focus::before, .nametag:active::before {
     border-radius: 0;
     background-color: transparent;
     width: 100%;
@@ -114,14 +114,20 @@
     height: .15em;
 }
 
-#nametagTR {
+#nametagClose {
     position: absolute;
     top: .5em;
     right: .5em;
     font-size: 5vw;
     background-color:white;
-    width: .15em;
+    width: .5em;
     height: .5em;
+    border-radius: 50%;
+}
+
+#nametagClose:hover, #nametagClose:focus, #nametagClose:active {
+    background-color: #ff605c;
+    transition: 0.25s;
 }
 
 #nametagSocials {
