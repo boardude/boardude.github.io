@@ -42,10 +42,10 @@
 
 .nametag::before {
     content: '';
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     display: block;
-    background-color: red;
+    background-color: #ff605c;
     border-radius: 50%;
     animation: fadein;
 }
@@ -54,9 +54,10 @@
     border-radius: 0;
     background-color: transparent;
     width: 100%;
+    height: 2.5vw;
     content: 'view my card';
     font-size: 0.33em;
-    color: red;
+    color: #ff605c;
     animation: fadein-nametag 0.5s;
     margin: auto;
 }
@@ -293,7 +294,7 @@
         font-size: 6.6666666667vw;
     }
 
-    #nametagTR {
+    #nametagClose {
         font-size: 6.6666666667vw;
     }
 
@@ -326,7 +327,7 @@
         font-size: 8.8888888889vw;
     }
 
-    #nametagTR {
+    #nametagClose {
         font-size: 8.8888888889vw;
     }
 
