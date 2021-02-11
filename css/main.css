@@ -47,7 +47,6 @@
     display: block;
     background-color: #ff605c;
     border-radius: 50%;
-    animation: fadein;
 }
 
 .nametag:hover::before, .nametag:focus::before, .nametag:active::before {
@@ -74,6 +73,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    animation: fadein-nametag 0.5s;
 }
 
 /* nametag modal */
@@ -83,10 +83,11 @@
     margin: auto; /* centre item */
     padding: 20px;
     border-radius: 1em;
-    width: 45vw; /* Could be more or less, depending on screen size */
-    height: 28.373vw; /* maintain 1.586 aspect ratio */
+    width: 47vw; /* Could be more or less, depending on screen size */
+    height: 28vw; /* maintain ~1.586 aspect ratio */
     position: relative;
     display: flex;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagName {
@@ -95,6 +96,7 @@
     left: .35em;
     font-size: 6vw;
     color: white;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagSite {
@@ -103,6 +105,7 @@
     right: 1.666667em;
     font-size: 1.5vw;
     color: white;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagBL {
@@ -113,6 +116,7 @@
     background-color: white;
     width: .5em;
     height: .15em;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagClose {
@@ -124,6 +128,7 @@
     width: .5em;
     height: .5em;
     border-radius: 50%;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagClose:hover, #nametagClose:focus, #nametagClose:active {
@@ -133,7 +138,7 @@
 
 #nametagSocials {
     width: 75%;
-    margin: 30% auto;
+    margin: 28% auto;
     display: flex;
 }
 
@@ -278,32 +283,32 @@
 @media (max-aspect-ratio: 10/7) {
     #nametagCard {
         width: 60vw;
-        height: 37.831vw;
+        height: 35.745vw;
     }
 
-    /* multiply by 60/45 (new/original width) for all below */
+    /* multiply by 60/47 (new/original width) for all below */
     #nametagName {
-        font-size: 8vw;
+        font-size: 7.659574468vw;
     }
 
     #nametagSite {
-        font-size: 2vw;
+        font-size: 2.553191489vw;
     }
 
     #nametagBL {
-        font-size: 6.6666666667vw;
+        font-size: 6.382978923vw;
     }
 
     #nametagClose {
-        font-size: 6.6666666667vw;
+        font-size: 6.382978723vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 6vw;
+        width: 5.744680851vw;
     }
 
     .tooltip {
-        font-size: 1.33333333333vw;
+        font-size: 1.276595745vw;
     } 
 }
 
@@ -311,31 +316,31 @@
 @media (max-aspect-ratio: 1/1) {
     #nametagCard {
         width: 80vw;
-        height: 50.44vw;
+        height: 47.65957447vw;
     }
 
-     /* multiply by 80/45 (new/original width) for all below */
+     /* multiply by 80/47 (new/original width) for all below */
     #nametagName {
-        font-size: 10.6666667vw;
+        font-size: 10.21276596vw;
     }
 
     #nametagSite {
-        font-size: 2.66666667vw; 
+        font-size: 2.553191489vw; 
     }
 
     #nametagBL {
-        font-size: 8.8888888889vw;
+        font-size: 8.510638298vw;
     }
 
     #nametagClose {
-        font-size: 8.8888888889vw;
+        font-size: 8.510638298vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 8vw; 
+        width: 7.659574468vw; 
     }
 
     .tooltip {
-        font-size: 1.7777777778vw;
+        font-size: 1.70212766vw;
     }
 }
