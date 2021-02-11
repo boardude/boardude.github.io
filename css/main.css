@@ -83,7 +83,7 @@
     padding: 20px;
     border-radius: 1em;
     width: 45vw; /* Could be more or less, depending on screen size */
-    height: 28.373vw;
+    height: 28.373vw; /* maintain 1.586 aspect ratio */
     position: relative;
     display: flex;
 }
@@ -267,5 +267,37 @@
 
     .nametag:hover::before {
         height: 0.48vw;
+    }
+}
+
+/* On portrait displays, widen the nametag modal */
+@media (max-aspect-ratio: 1/1) {
+    #nametagCard {
+        width: 80vw;
+        height: 50.44vw;
+    }
+
+    #nametagName {
+        font-size: 10.6666667vw; /* multiply by 80/45 */
+    }
+
+    #nametagSite {
+        font-size: 2.66666667vw; /* multiply by 80/45 */
+    }
+
+    #nametagBL {
+        font-size: 8.8888888889vw; /* multiply by 80/45 */
+    }
+
+    #nametagTR {
+        font-size: 8.8888888889vw; /* multiply by 80/45 */
+    }
+
+    #nametagEmail, #nametagLI, #nametagGH {
+        width: 8vw; /* multiply by 80/45 */
+    }
+
+    .tooltip {
+        font-size: 1.7777777778vw;
     }
 }
