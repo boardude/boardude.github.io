@@ -47,14 +47,15 @@
     display: block;
     background-color: red;
     border-radius: 50%;
+    animation: fadein;
 }
 
 .nametag:hover::before, .nametag:focus::before {
     border-radius: 0;
     background-color: transparent;
-    width: 75%;
+    width: 100%;
     content: 'view my card';
-    font-size: 0.25em;
+    font-size: 0.33em;
     color: red;
     animation: fadein-nametag 0.5s;
     margin: auto;
