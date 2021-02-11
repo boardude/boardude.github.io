@@ -40,3 +40,39 @@ function copyEmail() {
     }
     navigator.clipboard.writeText('mkzh.org@gmail.com');
 }
+
+/* SHOW TOOLTIP WHEN HOVERING OVER ICONS ON NAMETAG MODAL */
+var email = document.getElementById("emailIcon");
+var emailTip =  document.getElementById("emailTip");
+var emailCopied = document.getElementById("emailCopied");
+email.onmouseover = function() {
+    emailCopied.style.display = 'none';
+    emailTip.style.display = 'block';
+}
+email.onmouseleave = function() {
+    emailTip.style.display = 'none';
+}
+email.onclick = function() {
+    emailTip.style.display = 'none';
+    emailCopied.style.display = 'block';
+}
+
+var linkedIn = document.getElementById("linkedInIcon");
+var linkedInTip = document.getElementById("linkedInTip");
+linkedIn.onmouseover = function() {
+    linkedInTip.style.display = 'block';
+}
+
+linkedIn.onmouseleave = function() {
+    linkedInTip.style.display = 'none';
+}
+
+var gitHub = document.getElementById("gitHubIcon");
+var gitHubTip = document.getElementById("gitHubTip");
+gitHub.onmouseover = function() {
+    gitHubTip.style.display = 'block';
+}
+
+gitHub.onmouseleave = function() {
+    gitHubTip.style.display = 'none';
+}

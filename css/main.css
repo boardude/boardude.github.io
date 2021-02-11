@@ -59,7 +59,7 @@
     animation: fadein-nametag 0.5s;
     margin: auto;
     transition: background-color 0.2s ease-out;
-}   
+}
 
 /* general modal style */
 .modal {
@@ -133,10 +133,24 @@
 
 #nametagEmail, #nametagLI, #nametagGH {
     margin: auto;
-    width: 3.5vw;
+    width: 4.5vw;
     filter: invert(1);
     text-decoration: none;
     font-size: 2vw;
+}
+
+.tooltip {
+    display: none;
+    margin: auto;
+    font-size: 1vw;
+    color: blue;
+    text-align: center;
+    width: 100%;
+    animation: fadein-tooltip 0.3s;
+}
+
+#emailCopied {
+    animation: fadein 0.3s;
 }
 
 /****** scroll icon ******/  
@@ -212,6 +226,19 @@
         opacity:1;
         transform: translate(0, 0);
     } 
+}
+
+@keyframes fadein-tooltip {
+    0% {
+        opacity:0;
+        background-color: transparent;
+        transform: translate(0, -0.8em);
+    }
+
+    100% {
+        opacity:1;
+        transform: translate(0, 0);
+    }  
 }
 
 /****** MEDIA QUERIES *******/
