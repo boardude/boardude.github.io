@@ -101,15 +101,16 @@
 
 #nametagSite {
     position: absolute;
-    bottom: .5em;
+    bottom: 1.5em;
     right: 1.666667em;
     font-size: 1.5vw;
     color: white;
     animation: fadein-nametag 0.5s;
+    text-decoration: none;
 }
 
-#nametagSite:hover, #nametagName:hover {
-    color: royalblue;
+#nametagSite:hover {
+    color: hsl(1, 85%, 68%);
     transition: 0.25s;
 }
 
@@ -159,7 +160,7 @@
     display: none;
     margin: auto;
     font-size: 1vw;
-    color:#009fa3;
+    color:hsl(181, 85%, 32%);
     text-align: center;
     width: 100%;
     animation: fadein-tooltip 0.3s;
