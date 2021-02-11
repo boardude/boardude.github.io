@@ -42,23 +42,23 @@
 
 .nametag::before {
     content: '';
-    width: 2vw;
-    height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
     display: block;
-    background-color: red;
+    background-color: #ff605c;
     border-radius: 50%;
 }
 
-.nametag:hover::before, .nametag:focus::before {
+.nametag:hover::before, .nametag:focus::before, .nametag:active::before {
     border-radius: 0;
     background-color: transparent;
-    width: 75%;
+    width: 100%;
+    height: 2.5vw;
     content: 'view my card';
-    font-size: 0.25em;
-    color: red;
+    font-size: 0.33em;
+    color: #ff605c;
     animation: fadein-nametag 0.5s;
     margin: auto;
-    transition: background-color 0.2s ease-out;
 }
 
 /* general modal style */
@@ -73,6 +73,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    animation: fadein-nametag 0.5s;
 }
 
 /* nametag modal */
@@ -82,10 +83,11 @@
     margin: auto; /* centre item */
     padding: 20px;
     border-radius: 1em;
-    width: 45vw; /* Could be more or less, depending on screen size */
-    height: 28.373vw; /* maintain 1.586 aspect ratio */
+    width: 47vw; /* Could be more or less, depending on screen size */
+    height: 28vw; /* maintain ~1.586 aspect ratio */
     position: relative;
     display: flex;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagName {
@@ -94,14 +96,22 @@
     left: .35em;
     font-size: 6vw;
     color: white;
+    animation: fadein-nametag 0.5s;
 }
 
 #nametagSite {
     position: absolute;
-    bottom: .5em;
+    bottom: 1.5em;
     right: 1.666667em;
     font-size: 1.5vw;
     color: white;
+    animation: fadein-nametag 0.5s;
+    text-decoration: none;
+}
+
+#nametagSite:hover {
+    color: hsl(1, 85%, 68%);
+    transition: 0.25s;
 }
 
 #nametagBL {
@@ -112,28 +122,35 @@
     background-color: white;
     width: .5em;
     height: .15em;
+    animation: fadein-nametag 0.5s;
 }
 
-#nametagTR {
+#nametagClose {
     position: absolute;
     top: .5em;
     right: .5em;
     font-size: 5vw;
-    background-color: white;
-    width: .45em;
-    height: .45em;
+    background-color:white;
+    width: .5em;
+    height: .5em;
     border-radius: 50%;
+    animation: fadein-nametag 0.5s;
+}
+
+#nametagClose:hover, #nametagClose:focus, #nametagClose:active {
+    background-color: #ff605c;
+    transition: 0.25s;
 }
 
 #nametagSocials {
     width: 75%;
-    margin: 31% auto;
+    margin: 28% auto;
     display: flex;
 }
 
 #nametagEmail, #nametagLI, #nametagGH {
     margin: auto;
-    width: 4.5vw;
+    width: 5vw;
     filter: invert(1);
     text-decoration: none;
     font-size: 2vw;
@@ -143,7 +160,7 @@
     display: none;
     margin: auto;
     font-size: 1vw;
-    color: blue;
+    color:hsl(181, 85%, 32%);
     text-align: center;
     width: 100%;
     animation: fadein-tooltip 0.3s;
@@ -206,7 +223,6 @@
 @keyframes fadein-nametag {
     0% {
         opacity:0;
-        background-color: transparent;
         transform: translate(0, 0.8em);
     }
 
@@ -231,7 +247,6 @@
 @keyframes fadein-tooltip {
     0% {
         opacity:0;
-        background-color: transparent;
         transform: translate(0, -0.8em);
     }
 
@@ -274,32 +289,32 @@
 @media (max-aspect-ratio: 10/7) {
     #nametagCard {
         width: 60vw;
-        height: 37.831vw;
+        height: 35.745vw;
     }
 
-    /* multiply by 60/45 (new/original width) for all below */
+    /* multiply by 60/47 (new/original width) for all below */
     #nametagName {
-        font-size: 8vw;
+        font-size: 7.659574468vw;
     }
 
     #nametagSite {
-        font-size: 2vw;
+        font-size: 2.553191489vw;
     }
 
     #nametagBL {
-        font-size: 6.6666666667vw;
+        font-size: 6.382978923vw;
     }
 
-    #nametagTR {
-        font-size: 6.6666666667vw;
+    #nametagClose {
+        font-size: 6.382978723vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 6vw;
+        width: 6.5vw;
     }
 
     .tooltip {
-        font-size: 1.33333333333vw;
+        font-size: 1.276595745vw;
     } 
 }
 
@@ -307,31 +322,31 @@
 @media (max-aspect-ratio: 1/1) {
     #nametagCard {
         width: 80vw;
-        height: 50.44vw;
+        height: 47.65957447vw;
     }
 
-     /* multiply by 80/45 (new/original width) for all below */
+     /* multiply by 80/47 (new/original width) for all below */
     #nametagName {
-        font-size: 10.6666667vw;
+        font-size: 10.21276596vw;
     }
 
     #nametagSite {
-        font-size: 2.66666667vw; 
+        font-size: 2.553191489vw; 
     }
 
     #nametagBL {
-        font-size: 8.8888888889vw;
+        font-size: 8.510638298vw;
     }
 
-    #nametagTR {
-        font-size: 8.8888888889vw;
+    #nametagClose {
+        font-size: 8.510638298vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 8vw; 
+        width: 9vw; 
     }
 
     .tooltip {
-        font-size: 1.7777777778vw;
+        font-size: 1.70212766vw;
     }
 }
