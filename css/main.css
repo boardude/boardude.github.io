@@ -139,33 +139,6 @@
     font-size: 2vw;
 }
 
-#nametagEmail:hover::before, #nametagEmail:focus::before {
-    background-color: transparent;
-    display: block;
-    width: 100%;
-    content: 'email';
-    color: black;
-    animation: fadein-nametag 0.5s;
-}
-
-#nametagLI:hover::before, #nametagEmail:focus::before {
-    background-color: transparent;
-    display: block;
-    width: 100%;
-    content: 'LinkedIn';
-    color: black;
-    animation: fadein-nametag 0.5s;
-}   
-
-#nametagGH:hover::before, #nametagEmail:focus::before {
-    background-color: transparent;
-    display: block;
-    width: 100%;
-    content: 'GitHub';
-    color: black;
-    animation: fadein-nametag 0.5s;
-}   
-
 /****** scroll icon ******/  
 .scroll-icon-container {
     animation: fadein-scroll 2s;
