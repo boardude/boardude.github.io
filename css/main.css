@@ -310,7 +310,11 @@
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
+<<<<<<< HEAD
         width: 6.5vw;
+=======
+        width: 5.744680851vw;
+>>>>>>> 590b9f45b83ddd367789a886848565f2a950aa5b
     }
 
     .tooltip {
@@ -343,7 +347,11 @@
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
+<<<<<<< HEAD
         width: 9vw; 
+=======
+        width: 7.659574468vw; 
+>>>>>>> 590b9f45b83ddd367789a886848565f2a950aa5b
     }
 
     .tooltip {

@@ -10,8 +10,14 @@ window.onclick = function(event) {
 
 /** specific rules **/
 // When the user clicks on the nametag, open a business card modal
+var nametag = document.getElementById("nametagContainer"); 
 var showCard = function() {
-    document.getElementById("nametagContainer").style.display = "flex";
+    nametag.style.display = "flex";
+}
+
+// When the user clicks on the close button, close the modal
+document.getElementById("nametagClose").onclick = function() {
+    nametag.style.display = "none";
 }
 
 /* COPY EMAIL TO CLIPBOARD */
