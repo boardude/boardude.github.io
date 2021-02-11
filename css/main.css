@@ -58,7 +58,6 @@
     color: red;
     animation: fadein-nametag 0.5s;
     margin: auto;
-    transition: background-color 0.2s ease-out;
 }
 
 /* general modal style */
@@ -119,10 +118,9 @@
     top: .5em;
     right: .5em;
     font-size: 5vw;
-    background-color: white;
-    width: .45em;
-    height: .45em;
-    border-radius: 50%;
+    background-color:white;
+    width: .15em;
+    height: .5em;
 }
 
 #nametagSocials {
