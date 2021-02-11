@@ -1,3 +1,8 @@
+/****** GENERAL STYLES ******/
+.text {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /****** LANDING ******/
 .landing {
     width: 100vw;
@@ -35,8 +40,7 @@
     height: 2vw;
     display: block;
     background-color: red;
-    border-radius: 50%; 
-    transition: background-color 0.2s ease-out;
+    border-radius: 50%;
 }
 
 .nametag:hover::before, .nametag:focus::before {
@@ -48,6 +52,7 @@
     color: red;
     animation: fadeinandup-nametag 0.8s;
     margin: auto;
+    transition: background-color 0.2s ease-out;
 }   
 
 /****** modals ******/
@@ -62,17 +67,56 @@
     height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
 }
 
-/* general modal content/box style */
-.modal-content {
-    background-color: #fefefe;
+/* nametag modal content/box style */
+#nametagCard {
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     margin: auto; /* centre item */
     padding: 20px;
     border-radius: 1em;
     width: 45vw; /* Could be more or less, depending on screen size */
     height: 28.373vw;
+    position: relative;
+}
+
+#nametagName {
+    position: absolute;
+    top: -.73em;
+    left: .35em;
+    font-size: 6vw;
+    color: white;
+}
+
+#nametagSite {
+    position: absolute;
+    bottom: .5em;
+    right: 1.666667em;
+    font-size: 1.5vw;
+    color: white;
+}
+
+#nametagBL {
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    font-size: 5vw;
+    background-color: white;
+    width: .5em;
+    height: .15em;
+}
+
+#nametagTR {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 5vw;
+    background-color: white;
+    width: .45em;
+    height: .45em;
+    border-radius: 50%;
 }
 
 /****** scroll icon ******/  
