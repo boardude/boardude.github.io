@@ -73,7 +73,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0); /* Black w/ opacity */
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 /* nametag modal */
@@ -87,7 +87,7 @@
     height: 28vw; /* maintain ~1.586 aspect ratio */
     position: relative;
     display: flex;
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagName {
@@ -96,7 +96,7 @@
     left: .35em;
     font-size: 6vw;
     color: white;
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagSite {
@@ -105,7 +105,7 @@
     right: 1.666667em;
     font-size: 1.5vw;
     color: white;
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
     text-decoration: none;
 }
 
@@ -122,7 +122,7 @@
     background-color: white;
     width: .5em;
     height: .15em;
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagClose {
@@ -134,7 +134,7 @@
     width: .5em;
     height: .5em;
     border-radius: 50%;
-    animation: fadein-nametag 0.5s;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagClose:hover, #nametagClose:focus, #nametagClose:active {
@@ -146,6 +146,7 @@
     width: 75%;
     margin: 28% auto;
     display: flex;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagEmail, #nametagLI, #nametagGH {
@@ -154,6 +155,7 @@
     filter: invert(1);
     text-decoration: none;
     font-size: 2vw;
+    animation: fadein-nametag-modal 0.5s;
 }
 
 .tooltip {
@@ -229,6 +231,18 @@
     100% {
         opacity:1;
         transform: translate(0, 0);
+    } 
+}
+
+@keyframes fadein-nametag-modal {
+    0% {
+        opacity:0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity:1;
+        transform: scale(1);
     } 
 }
 
