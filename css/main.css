@@ -1,4 +1,9 @@
 /****** GENERAL STYLES ******/
+html{ 
+    overflow: scroll; 
+    -webkit-overflow-scrolling: touch;
+}
+
 .text {
     font-family: 'Montserrat', sans-serif;
 }
