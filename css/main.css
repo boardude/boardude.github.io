@@ -377,3 +377,10 @@
         font-size: 1.70212766vw;
     }
 }
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    #nametagCloseX {
+        display: block;
+    }
+}
