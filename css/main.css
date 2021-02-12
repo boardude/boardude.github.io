@@ -130,16 +130,21 @@
     top: .5em;
     right: .5em;
     font-size: 5vw;
-    background-color:white;
+    background-color:#ff605c;
     width: .5em;
     height: .5em;
     border-radius: 50%;
     animation: fadein-nametag-modal 0.5s;
 }
 
-#nametagClose:hover, #nametagClose:focus, #nametagClose:active {
-    background-color: #ff605c;
-    transition: 0.25s;
+#nametagCloseX {
+    position: absolute;
+    top: .687em;
+    right: .9556em;
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.65);
+    display: none;
+    text-decoration: none;
 }
 
 #nametagSocials {
@@ -323,6 +328,10 @@
         font-size: 6.382978723vw;
     }
 
+    #nametagCloseX {
+        font-size: 3.829787234vw;
+    }
+
     #nametagEmail, #nametagLI, #nametagGH {
         width: 6.5vw;
     }
@@ -354,6 +363,10 @@
 
     #nametagClose {
         font-size: 8.510638298vw;
+    }
+
+    #nametagCloseX {
+        font-size: 5.106382979vw;
     }
 
     #nametagEmail, #nametagLI, #nametagGH {

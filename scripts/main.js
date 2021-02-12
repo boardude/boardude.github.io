@@ -15,8 +15,27 @@ var showCard = function() {
     nametag.style.display = "flex";
 }
 
+/* Show x when hovering over close button*/
+var close = document.getElementById("nametagClose");
+var closeX = document.getElementById("nametagCloseX");
+close.onmouseover = function() {
+    closeX.style.display = 'block';
+}
+
+close.onmouseleave = function() {
+    closeX.style.display = 'none';
+}
+
+closeX.onmouseover = function() {
+    closeX.style.display = 'block';
+}
+
+closeX.onmouseleave = function() {
+    closeX.style.display = 'none';
+}
+
 // When the user clicks on the close button, close the modal
-document.getElementById("nametagClose").onclick = function() {
+var closeModal = function() {
     nametag.style.display = "none";
 }
 
@@ -82,3 +101,4 @@ gitHub.onmouseover = function() {
 gitHub.onmouseleave = function() {
     gitHubTip.style.display = 'none';
 }
+
