@@ -141,6 +141,7 @@ html{
     border-radius: 50%;
     animation: fadein-nametag-modal 0.5s;
     display: flex;
+    cursor: pointer;
 }
 
 #nametagCloseX {
@@ -149,6 +150,7 @@ html{
     display: block;
     text-align: center;
     margin: 2% auto;
+    cursor: pointer;
 }
 
 #nametagSocials {
@@ -280,15 +282,10 @@ html{
 }
 
 /****** MEDIA QUERIES *******/
-/* If viewport becomes too wide, .landing-text font size responds to viewport height*/
-@media (min-aspect-ratio: 880/324) {
-    .landing-text {
-        font-size: 13.5vh;
-    }
-
-    .scroll-icon, .scroll-icon-dot {
-        font-size: 13.5vh;
-        display: none;
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    #nametagCloseX {
+        display: block;
     }
 }
 
@@ -305,6 +302,18 @@ html{
 
     .nametag:hover::before {
         height: 0.48vw;
+    }
+}
+
+/* If viewport becomes too wide, .landing-text font size responds to viewport height*/
+@media (min-aspect-ratio: 880/324) {
+    .landing-text {
+        font-size: 13.5vh;
+    }
+
+    .scroll-icon, .scroll-icon-dot {
+        font-size: 13.5vh;
+        display: none;
     }
 }
 
@@ -346,7 +355,7 @@ html{
 }
 
 /* On portrait, widen the nametag modal */
-@media (max-aspect-ratio: 1/1) {
+@media (max-aspect-ratio: 1/1) and (min-width: 768px) {
     #nametagCard {
         width: 80vw;
         height: 47.65957447vw;
@@ -382,9 +391,39 @@ html{
     }
 }
 
-/* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) {
+/* On portrait mobile, widen the nametag modal */
+@media (max-aspect-ratio: 1/1) {
+    #nametagCard {
+        width: 90vw;
+        height: calc(90vw * 28 / 47);
+    }
+
+     /* multiply by 90/47 (new/original width) for all below */
+    #nametagName {
+        font-size: calc(6vw * 90 / 47);
+    }
+
+    #nametagSite {
+        font-size: calc(1.5vw * 90 / 47); 
+    }
+
+    #nametagBL {
+        font-size: calc(5vw * 90 / 47);
+    }
+
+    #nametagClose {
+        font-size: calc(5vw * 90 / 47);
+    }
+
     #nametagCloseX {
-        display: block;
+        font-size: calc(2vw * 90 / 47);
+    }
+
+    #nametagEmail, #nametagLI, #nametagGH {
+        width: calc(5vw * 90 / 47); 
+    }
+
+    .tooltip {
+        font-size: calc(1vw * 90 / 47);
     }
 }
