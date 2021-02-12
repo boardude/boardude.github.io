@@ -38,6 +38,8 @@ closeX.onmouseleave = function() {
 var closeModal = function() {
     nametag.style.display = "none";
 }
+close.onclick = closeModal;
+closeX.onclick = closeModal;
 
 /* COPY EMAIL TO CLIPBOARD */
 function fallbackCopyEmail() {
