@@ -57,6 +57,7 @@ html{
     display: block;
     background-color: #ff605c;
     border-radius: 50%;
+    transition: background-color 0.1s, border-radius 0.2s;
 }
 
 .nametag:hover::before, .nametag:focus::before, .nametag:active::before {
