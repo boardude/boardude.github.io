@@ -2,6 +2,7 @@
 html{ 
     overflow: scroll; 
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 .text {
@@ -19,7 +20,7 @@ html{
 }
 
 /****** LANDING ******/
-.landing {
+#landing {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -187,37 +188,32 @@ html{
     animation: fadein 0.3s;
 }
 
-/****** scroll icon ******/  
-.scroll-icon-container {
+/****** scroll arrow ******/  
+.scroll-arrow-container {
     animation: fadein-scroll 2s;
 }
 
-.scroll-icon-dot {
-    font-size: 5vmax;
-    display: block;
-    position: absolute;
-    left: 50%;
-    background: black;
-    height: .125em;
-    width: .125em; /* same as height */
-    top: 50%;
-    margin-left: -0.0625em; /* half of height */
-    border-radius: 50%;
-    transform-origin: top center;
-    backface-visibility: hidden;
-    animation: scroll 3s ease-out infinite;
+.scroll-arrow {
+    box-sizing: border-box;
+    height: 3.2vw;
+    width: 3.2vw;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 .28em .28em 0;
+    transform: rotate(45deg);
+    transition: 0.15s ease-out;
+    margin-bottom: 2em;
 }
 
-.scroll-icon {
-    font-size: 5vmax;
-    display: block;
-    position: relative;
-    height: 1em;
-    width: 0.5em; /* half of height */
-    border: .1em solid black;
-    border-radius: 1em;
-    margin-bottom: 50%;
-    animation: fadein 2s;
+.scroll-arrow:hover {
+    border-bottom-width: .38em;
+    border-right-width: .38em;
+}
+
+/****** PROJECTS ******/
+#projects {
+    width: 100vw;
+    height: 100vh;
 }
 
 /****** KEYFRAMES ******/
@@ -313,11 +309,6 @@ html{
 @media (min-aspect-ratio: 880/324) {
     .landing-text {
         font-size: 13.5vh;
-    }
-
-    .scroll-icon, .scroll-icon-dot {
-        font-size: 13.5vh;
-        display: none;
     }
 }
 
