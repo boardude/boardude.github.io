@@ -154,15 +154,15 @@ html{
 }
 
 #nametagSocials {
-    width: 75%;
-    margin: 28% auto;
+    width: 85%;
+    margin: 26% auto;
     display: flex;
     animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagEmail, #nametagLI, #nametagGH {
     margin: auto;
-    width: 5vw;
+    width: 6.5vw;
     filter: invert(1);
     text-decoration: none;
     font-size: 2vw;
@@ -172,14 +172,16 @@ html{
 .tooltip {
     display: none;
     margin: auto;
-    font-size: 1vw;
-    color:hsl(181, 85%, 32%);
+    font-size: 1.5vw;
+    color: black;
     text-align: center;
     width: 100%;
     animation: fadein-tooltip 0.3s;
 }
 
 #emailCopied {
+    color: #a30400;
+    filter: saturate(80%);
     animation: fadein 0.3s;
 }
 
