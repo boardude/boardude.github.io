@@ -8,6 +8,10 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 /* responsive images */
 .respImg {
     width: 100%;
@@ -141,7 +145,6 @@ html{
     border-radius: 50%;
     animation: fadein-nametag-modal 0.5s;
     display: flex;
-    cursor: pointer;
 }
 
 #nametagCloseX {
@@ -150,7 +153,6 @@ html{
     display: none;
     text-align: center;
     margin: 2% auto;
-    cursor: pointer;
 }
 
 #nametagSocials {
