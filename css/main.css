@@ -323,75 +323,39 @@ html{
 @media (max-aspect-ratio: 10/7) {
     #nametagCard {
         width: 60vw;
-        height: 35.745vw;
+        height: calc(60vw * 28 / 47);
     }
 
-    /* multiply by 60/47 (new/original width) for all below */
+     /* multiply by 60/47 (new/original width) for all below */
     #nametagName {
-        font-size: 7.659574468vw;
+        font-size: calc(6vw * 60 / 47);
     }
 
     #nametagSite {
-        font-size: 2.553191489vw;
+        font-size: calc(1.5vw * 60 / 47); 
     }
 
     #nametagBL {
-        font-size: 6.382978923vw;
+        font-size: calc(5vw * 60 / 47);
     }
 
     #nametagClose {
-        font-size: 6.382978723vw;
+        font-size: calc(5vw * 60 / 47);
     }
 
     #nametagCloseX {
-        font-size: 2.553191489vw;
+        font-size: calc(2vw * 60 / 47);
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: 6.5vw;
+        width: calc(6.5vw * 60 / 47); 
     }
 
     .tooltip {
-        font-size: 1.276595745vw;
-    } 
-}
-
-/* On portrait, widen the nametag modal */
-@media (max-aspect-ratio: 1/1) and (min-width: 768px) {
-    #nametagCard {
-        width: 80vw;
-        height: 47.65957447vw;
-    }
-
-     /* multiply by 80/47 (new/original width) for all below */
-    #nametagName {
-        font-size: 10.21276596vw;
-    }
-
-    #nametagSite {
-        font-size: 2.553191489vw; 
-    }
-
-    #nametagBL {
-        font-size: 8.510638298vw;
-    }
-
-    #nametagClose {
-        font-size: 8.510638298vw;
-    }
-
-    #nametagCloseX {
-        font-size: 3.404255vw;
-    }
-
-    #nametagEmail, #nametagLI, #nametagGH {
-        width: 9vw; 
-    }
-
-    .tooltip {
-        font-size: 1.70212766vw;
+        font-size: calc(1.5vw * 60 / 47);
     }
 }
+
 
 /* On portrait mobile, widen the nametag modal */
 @media (max-aspect-ratio: 1/1) {
@@ -422,10 +386,47 @@ html{
     }
 
     #nametagEmail, #nametagLI, #nametagGH {
-        width: calc(5vw * 90 / 47); 
+        width: calc(6.5vw * 90 / 47); 
     }
 
     .tooltip {
-        font-size: calc(1vw * 90 / 47);
+        font-size: calc(1.5vw * 90 / 47);
+    }
+}
+
+/* On portrait, widen the nametag modal */
+@media (max-aspect-ratio: 1/1) and (max-width: 768px) {
+    #nametagCard {
+        width: 80vw;
+        height: calc(80vw * 28 / 47);
+    }
+
+     /* multiply by 80/47 (new/original width) for all below */
+    #nametagName {
+        font-size: calc(6vw * 80 / 47);
+    }
+
+    #nametagSite {
+        font-size: calc(1.5vw * 80 / 47); 
+    }
+
+    #nametagBL {
+        font-size: calc(5vw * 80 / 47);
+    }
+
+    #nametagClose {
+        font-size: calc(5vw * 80 / 47);
+    }
+
+    #nametagCloseX {
+        font-size: calc(2vw * 80 / 47);
+    }
+
+    #nametagEmail, #nametagLI, #nametagGH {
+        width: calc(6.5vw * 80 / 47); 
+    }
+
+    .tooltip {
+        font-size: calc(1.5vw * 80 / 47);
     }
 }
