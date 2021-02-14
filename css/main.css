@@ -207,8 +207,9 @@ html{
 }
 
 .scroll-arrow:hover {
-    border-bottom-width: .38em;
-    border-right-width: .38em;
+    border-color: #ff605c;
+    height: 4vw;
+    width: 4vw;
 }
 
 /****** PROJECTS ******/
