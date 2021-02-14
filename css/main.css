@@ -60,7 +60,7 @@ html{
     background-color: #ff605c;
     border-radius: 50%;
     margin: auto;
-    transition: background-color 0.1s, border-radius 0.2s, width 0.1s, color 0.2s cubic-bezier(1,.02,1,.11);
+    transition: background-color 0.1s, border-radius 0.2s, width 0.1s, color 0.2s;
 }
 
 .nametag:hover::before, .nametag:focus::before, .nametag:active::before {
