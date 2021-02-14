@@ -51,24 +51,27 @@ html{
 }
 
 .nametag::before {
-    content: '';
-    width: 2.5vw;
-    height: 2.5vw;
+    content: 'view my card';
+    font-size: .33em;
+    color: transparent;
+    width: 2.7vw;
+    height: 2.7vw;
     display: block;
     background-color: #ff605c;
     border-radius: 50%;
-    transition: background-color 0.1s, border-radius 0.2s;
+    margin: auto;
+    transition: background-color 0.1s, border-radius 0.2s, width 0.1s, color 0.2s cubic-bezier(1,.02,1,.11);
 }
 
 .nametag:hover::before, .nametag:focus::before, .nametag:active::before {
-    border-radius: 0;
-    background-color: transparent;
+    border-radius: .33em;
+    background-color: #ff605c;
     width: 100%;
-    height: 2.5vw;
+    height: 2.7vw;
     content: 'view my card';
-    font-size: 0.33em;
-    color: #ff605c;
-    animation: fadein-nametag 0.5s;
+    font-size: .33em;
+    color: white;
+    /*animation: fadein-nametag 0.5s;*/
     margin: auto;
 }
 
