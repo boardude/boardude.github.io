@@ -32,7 +32,18 @@ html{
 
 .pre-logo-container {
     width: 25%;
-    margin: auto;
+    margin: auto;   
+}
+
+.pre-logo {
+    filter: invert(1);
+    border-radius: 5%;
+    animation: landing-logo 5s;
+    transition: 0.5s;
+}
+
+.pre-logo:hover {
+    filter: invert(0);
 }
 
 .pre-logo-container::before {
@@ -62,7 +73,7 @@ html{
 
 /****** scroll arrow ******/  
 .scroll-arrow-container {
-    animation: fadein-scroll 5s;
+    animation: scroll-arrow 5.5s;
 }
 
 .scroll-arrow {
@@ -296,13 +307,13 @@ html{
     } 
 }
 
-@keyframes fadein-scroll {
+@keyframes scroll-arrow {
     0% {
         opacity:0;
         transform: translate(0, -2.5em);
     }
 
-    30% {
+    50% {
         opacity: 0;
         transform: translate(0, -2.5em);
     }
@@ -323,6 +334,24 @@ html{
         opacity:1;
         transform: translate(0, 0);
     }  
+}
+
+@keyframes landing-logo {
+    0% {
+        opacity: 0;
+        filter: invert(1);
+        border-radius: 50%;
+    }
+
+    50% {
+        filter: invert(0);
+    }
+
+    100% {
+        border-radius: 1%;
+        opacity: 1;
+        filter: invert(1);
+    }
 }
 
 /****** MEDIA QUERIES *******/
