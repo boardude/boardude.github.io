@@ -345,11 +345,11 @@ html{
 
     50% {
         filter: invert(0);
+        opacity: 1;
     }
 
     100% {
         border-radius: 5%;
-        opacity: 1;
         filter: invert(1);
     }
 }
