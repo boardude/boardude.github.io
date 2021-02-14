@@ -32,13 +32,13 @@ html{
 
 .pre-logo-container {
     width: 25%;
-    margin: auto;   
+    margin: auto;
 }
 
 .pre-logo {
     filter: invert(1);
     border-radius: 5%;
-    animation: landing-logo 5s;
+    animation: pre-logo 5s;
     transition: 0.5s;
 }
 
@@ -336,7 +336,7 @@ html{
     }  
 }
 
-@keyframes landing-logo {
+@keyframes pre-logo {
     0% {
         opacity: 0;
         filter: invert(1);
@@ -348,7 +348,7 @@ html{
     }
 
     100% {
-        border-radius: 1%;
+        border-radius: 5%;
         opacity: 1;
         filter: invert(1);
     }
