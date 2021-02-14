@@ -19,6 +19,45 @@ html{
     height: auto;
 }
 
+/****** PRE-LANDING ******/
+#pre-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.pre-logo-container {
+    width: 25%;
+    margin: auto;
+}
+
+/****** scroll arrow ******/  
+.scroll-arrow-container {
+    animation: fadein-scroll 2s;
+}
+
+.scroll-arrow {
+    box-sizing: border-box;
+    height: 3.2vw;
+    width: 3.2vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 .28em .28em 0;
+    transform: rotate(45deg);
+    transition: 0.15s ease-out;
+    margin-bottom: 2em;
+}
+
+.scroll-arrow:hover {
+    border-color: #ff605c;
+    height: 4vw;
+    width: 4vw;
+}
+
 /****** LANDING ******/
 #landing {
     width: 100vw;
@@ -190,29 +229,6 @@ html{
     color: #a30400;
     filter: saturate(80%);
     animation: fadein 0.3s;
-}
-
-/****** scroll arrow ******/  
-.scroll-arrow-container {
-    animation: fadein-scroll 2s;
-}
-
-.scroll-arrow {
-    box-sizing: border-box;
-    height: 3.2vw;
-    width: 3.2vw;
-    border-style: solid;
-    border-color: black;
-    border-width: 0 .28em .28em 0;
-    transform: rotate(45deg);
-    transition: 0.15s ease-out;
-    margin-bottom: 2em;
-}
-
-.scroll-arrow:hover {
-    border-color: #ff605c;
-    height: 4vw;
-    width: 4vw;
 }
 
 /****** PROJECTS ******/
