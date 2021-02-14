@@ -35,6 +35,31 @@ html{
     margin: auto;
 }
 
+.pre-logo-container::before {
+    content: 'how did you find this?';
+    color: transparent;
+    display: none;
+    font-size: 1.5vw;
+}
+
+.pre-logo-container:hover::before {
+    display: block;
+}
+
+.pre-logo-container::after {
+    content: 'Dedicated to bring change';
+    display: none;
+    color: white;
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+    text-align: center;
+    animation: fadein-slogan 0.35s;
+}
+
+.pre-logo-container:hover::after {
+    display: block;
+}
+
 /****** scroll arrow ******/  
 .scroll-arrow-container {
     animation: fadein-scroll 2s;
@@ -254,10 +279,10 @@ html{
     }
 }
 
-@keyframes fadein-nametag {
+@keyframes fadein-slogan {
     0% {
         opacity:0;
-        transform: translate(0, 0.8em);
+        transform: translate(0, -0.8em);
     }
 
     100% {
