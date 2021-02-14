@@ -33,6 +33,7 @@ html{
 .pre-logo-container {
     width: 25%;
     margin: auto;
+    animation: pre-logo-container 5s;
 }
 
 .pre-logo {
@@ -334,6 +335,22 @@ html{
         opacity:1;
         transform: translate(0, 0);
     }  
+}
+
+/* used to prevent premature hovering over logo which causes visually 
+unappealing transition*/
+@keyframes pre-logo-container {
+    0% {
+        pointer-events: none;
+    }
+
+    99% {
+        pointer-events: none;
+    }
+
+    100% {
+        pointer-events: auto;
+    }
 }
 
 @keyframes pre-logo {
