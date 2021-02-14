@@ -47,7 +47,7 @@ html{
 }
 
 .pre-logo-container::after {
-    content: 'Dedicated to bring change';
+    content: 'Dedicated to bring change.';
     display: none;
     color: white;
     font-family: 'Courier New';
