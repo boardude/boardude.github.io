@@ -62,7 +62,7 @@ html{
 
 /****** scroll arrow ******/  
 .scroll-arrow-container {
-    animation: fadein-scroll 2s;
+    animation: fadein-scroll 5s;
 }
 
 .scroll-arrow {
@@ -263,13 +263,6 @@ html{
 }
 
 /****** KEYFRAMES ******/
-@keyframes scroll {
-    0%   { transform: translateY(0); opacity: 1; }
-    25%  { opacity: 1; }
-    75%  { transform: translateY(-.3em); opacity: 0; }
-    100% { transform: translateY(0); opacity: 0; }
-}
-
 @keyframes fadein {
     from {
         opacity:0;
@@ -306,7 +299,12 @@ html{
 @keyframes fadein-scroll {
     0% {
         opacity:0;
-        transform: translate(0, 2em);
+        transform: translate(0, -2.5em);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translate(0, -2.5em);
     }
 
     100% {
