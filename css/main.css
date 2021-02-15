@@ -200,7 +200,7 @@ html{
 }
 
 #nametagSite:hover {
-    color: hsl(1, 85%, 68%);
+    color: hsl(1, 85%, 75%);
     transition: 0.25s;
 }
 
@@ -263,8 +263,7 @@ html{
 }
 
 #emailCopied {
-    color: #a30400;
-    filter: saturate(80%);
+    color:#0a7476;
     animation: fadein 0.3s;
 }
 
