@@ -3,9 +3,9 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// When window resizes, calculate vh again as above
+// When window resizes, remove --vh so there is no excessive height
+// manipulation events, causing visual disfigurement
 window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
     document.documentElement.style.removeProperty('--vh');
 });
 

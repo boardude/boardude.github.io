@@ -29,6 +29,7 @@ html{
     align-items: center;
     justify-content: center;
     background-color: black;
+    transition: height 0.35s ease-in-out;
 }
 
 .pre-logo-container {
