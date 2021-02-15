@@ -381,6 +381,20 @@ unappealing transition*/
 
 /* To prevent text from wrapping on narrow displays*/
 @media (max-aspect-ratio: 654/1106) {
+
+}
+
+/* Too wide viewports */
+@media (min-aspect-ratio: 880/324) {
+    /*.landing-text font size responds to viewport height*/
+    .landing-text {
+        font-size: 13.5vh;
+    }
+}
+
+/* Not wide enough but not portrait viewports */
+@media (max-aspect-ratio: 10/7) {
+    /* increase font-size of landing */
     .landing-text {
         font-size: 8vw;
     }
@@ -393,17 +407,8 @@ unappealing transition*/
     .nametag:hover::before {
         height: 0.48vw;
     }
-}
 
-/* If viewport becomes too wide, .landing-text font size responds to viewport height*/
-@media (min-aspect-ratio: 880/324) {
-    .landing-text {
-        font-size: 13.5vh;
-    }
-}
-
-/* On less wide displays, widen the nametag modal */
-@media (max-aspect-ratio: 10/7) {
+    /* widen the nametag modal */
     #nametagCard {
         width: 60vw;
         height: calc(60vw * 28 / 47);
@@ -440,8 +445,9 @@ unappealing transition*/
 }
 
 
-/* On portrait mobile, widen the nametag modal */
+/* Portrait viewports (mobile) */
 @media (max-aspect-ratio: 1/1) {
+    /* widen the nametag modal */
     #nametagCard {
         width: 90vw;
         height: calc(90vw * 28 / 47);
@@ -477,8 +483,9 @@ unappealing transition*/
     }
 }
 
-/* On portrait, widen the nametag modal */
+/* Portrait viewports*/
 @media (max-aspect-ratio: 1/1) and (max-width: 768px) {
+    /* widen the nametag modal */
     #nametagCard {
         width: 80vw;
         height: calc(80vw * 28 / 47);
