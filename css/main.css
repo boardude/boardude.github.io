@@ -31,7 +31,7 @@ html{
 }
 
 .pre-logo-container {
-    width: 25%;
+    width: 25vmax;
     margin: auto;
     animation: pre-logo-container 5s;
 }
@@ -51,7 +51,7 @@ html{
     content: 'how did you find this?';
     color: transparent;
     display: none;
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
 }
 
 .pre-logo-container:hover::before {
@@ -63,7 +63,7 @@ html{
     display: none;
     color: white;
     font-family: 'Courier New';
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
     text-align: center;
     animation: fadein-slogan 0.35s;
 }
@@ -447,7 +447,6 @@ unappealing transition*/
     }
 }
 
-
 /* Portrait viewports (mobile) */
 @media (max-aspect-ratio: 1/1) {
     /* increase font-size of landing */
@@ -465,6 +464,19 @@ unappealing transition*/
     .nametag:hover::before {
         height: calc(2.7vw * 8.5 / 5);
         font-size: calc(1.6vw * 8.5 / 5);
+    }
+
+    /* increase pre-logo size */
+    .pre-logo-container {
+        width: 40vmax;
+    }
+
+    .pre-logo-container:before {
+        font-size: calc(1.5vmax * 40 / 25);
+    }
+
+    .pre-logo-container:after {
+        font-size: calc(1.5vmax * 40 / 25);
     }
 
     /* widen the nametag modal */
