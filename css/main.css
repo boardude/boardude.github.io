@@ -79,8 +79,8 @@ html{
 
 .scroll-arrow {
     box-sizing: border-box;
-    height: 3.2vw;
-    width: 3.2vw;
+    height: 3.2vmax;
+    width: 3.2vmax;
     border-style: solid;
     border-color: white;
     border-width: 0 .28em .28em 0;
@@ -91,8 +91,8 @@ html{
 
 .scroll-arrow:hover {
     border-color: #ff605c;
-    height: 4vw;
-    width: 4vw;
+    height: 4vmax;
+    width: 4vmax;
 }
 
 /****** LANDING ******/
