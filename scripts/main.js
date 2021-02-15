@@ -5,7 +5,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // When window resizes, calculate vh again as above
 window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
+    let vh = window.outerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
