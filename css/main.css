@@ -29,7 +29,7 @@ html{
     align-items: center;
     justify-content: center;
     background-color: black;
-    transition: height 0.35s ease-in-out;
+    transition: height 0.35s ease-out;
 }
 
 .pre-logo-container {
@@ -42,7 +42,7 @@ html{
     filter: invert(1);
     border-radius: 5%;
     animation: pre-logo 5s;
-    transition: 0.35s ease-in-out;
+    transition: 0.35s ease-out;
 }
 
 .pre-logo:hover {
@@ -67,7 +67,7 @@ html{
     font-family: 'Courier New';
     font-size: 1.5vmax;
     text-align: center;
-    animation: fadein-slogan 0.35s;
+    animation: fadein-slogan 0.35s ease-out;
 }
 
 .pre-logo-container:hover::after {
