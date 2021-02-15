@@ -3,10 +3,14 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// When window resizes, remove --vh so there is no excessive height
-// manipulation events, causing visual disfigurement
+// When window resizes, reset height to 100vh to prevent excessive
+// height changes from causing visual disfigurement
+var resized = false;
 window.addEventListener('resize', () => {
-    document.documentElement.style.removeProperty('--vh');
+    if (!resized) {
+        document.getElementById("pre-landing").style.height = '100vh';
+        resized = true;
+    }
 });
 
 /* MODALS */
