@@ -1,3 +1,14 @@
+/* CHANGING SIZES OF BROWSER UI ELEMENTS (mobile) */
+// Find real viewport height and set --vh at :root as 1% of height
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// When window resizes, calculate vh again as above
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 /* MODALS */
 /** general rules **/
 // When the user clicks anywhere outside of the modal, close it
