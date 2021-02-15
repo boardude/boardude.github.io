@@ -128,7 +128,7 @@ html{
 
 .nametag::before {
     content: 'view my card';
-    font-size: .33em;
+    font-size: 1.6vw;
     color: transparent;
     width: 2.7vw;
     height: 2.7vw;
@@ -145,7 +145,7 @@ html{
     width: 100%;
     height: 2.7vw;
     content: 'view my card';
-    font-size: .33em;
+    font-size: 1.6vw;
     color: white;
     /*animation: fadein-nametag 0.5s;*/
     margin: auto;
@@ -395,17 +395,20 @@ unappealing transition*/
 /* Not wide enough but not portrait viewports */
 @media (max-aspect-ratio: 10/7) {
     /* increase font-size of landing */
+    /* mulitply by 8/5 (new/original font-size) for all below */
     .landing-text {
         font-size: 8vw;
     }
 
     .nametag::before {
-        width: 3.2vw;
-        height: 3.2vw;
+        width: 4.32vw;
+        height: 4.32vw;
+        font-size: 2.56vw;
     }
 
     .nametag:hover::before {
-        height: 0.48vw;
+        height: 4.32vw;
+        font-size: 2.56vw;
     }
 
     /* widen the nametag modal */
@@ -447,6 +450,23 @@ unappealing transition*/
 
 /* Portrait viewports (mobile) */
 @media (max-aspect-ratio: 1/1) {
+    /* increase font-size of landing */
+    /* mulitply by 8.5/5 (new/original font-size) for all below */
+    .landing-text {
+        font-size: 8.5vw;
+    }
+
+    .nametag::before {
+        width: calc(2.7vw * 8.5 / 5);
+        height: calc(2.7vw * 8.5 / 5);
+        font-size: calc(1.6vw * 8.5 / 5);
+    }
+
+    .nametag:hover::before {
+        height: calc(2.7vw * 8.5 / 5);
+        font-size: calc(1.6vw * 8.5 / 5);
+    }
+
     /* widen the nametag modal */
     #nametagCard {
         width: 90vw;
