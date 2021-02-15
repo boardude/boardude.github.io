@@ -6,12 +6,12 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 // When window resizes, reset height to 100vh to prevent excessive
 // height changes from causing visual disfigurement
 var resized = false;
-window.addEventListener('resize', () => {
+window.onresize = function() {
     if (!resized) {
         document.getElementById("pre-landing").style.height = '100vh';
-        resized = true;
     }
-});
+    resized = true;
+}
 
 /* MODALS */
 /** general rules **/
