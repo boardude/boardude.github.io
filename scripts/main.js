@@ -14,17 +14,6 @@ window.onresize = function() {
     resized = true;
 }
 
-/* LOAD ON SCROLL */
-var landingText = document.getElementsByClassName("landing-text-container")[0];
-var onScroll = function() {
-    if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
-        landingText.style.display = 'block';
-    }
-};
-window.addEventListener('scroll', onScroll);
-
-
-
 /* LANDING TEXT TYPEWRITER EFFECT */
 var typeText = [
     "a web developer",
@@ -33,7 +22,7 @@ var typeText = [
     "a golfer"
 ];
 
-function typewriter(arr, charIndex, wordIndex, charDelay) {
+var typewriter = function(arr, charIndex, wordIndex, charDelay) {
     var destination = document.getElementById("typewriter");
     destination.innerHTML = arr[wordIndex].substring(0, charIndex) + "|";
     if (charIndex++ == arr[wordIndex].length) { // end of a word
@@ -54,7 +43,34 @@ function typewriter(arr, charIndex, wordIndex, charDelay) {
     }
 }
 
-typewriter(typeText, 0, 0, 100);
+/* Make sure typewriter only runs once when bound to the scroll event listener below*/
+function once(fn, context) { /* generic once function */
+	var result;
+
+	return function() { 
+		if(fn) {
+			result = fn.apply(context || this, arguments);
+			fn = null;
+		}
+
+		return result;
+	};
+}
+
+var typewriterOnce = once(function() {
+    typewriter(typeText, 0, 0, 100);
+});
+
+/* LOAD ON SCROLL */
+var onScroll = function() {
+    var landingText = document.getElementsByClassName("landing-text-container")[0];
+    if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
+        landingText.style.display = 'block';
+        typewriterOnce();
+    }
+};
+window.addEventListener('scroll', onScroll);
+
 
 /* MODALS */
 /** general rules **/
