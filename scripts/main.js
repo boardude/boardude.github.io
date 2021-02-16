@@ -66,7 +66,7 @@ var onScroll = function() {
     var landingText = document.getElementsByClassName("landing-text-container")[0];
     if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
         landingText.style.display = 'block';
-        typewriterOnce();
+        setTimeout(typewriterOnce, 2000);
     }
 };
 window.addEventListener('scroll', onScroll);
