@@ -17,7 +17,7 @@ window.onresize = function() {
 /* LOAD ON SCROLL */
 var landingText = document.getElementsByClassName("landing-text-container")[0];
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= preLanding.clientHeight * 0.5) {
+    if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
         landingText.style.display = 'block';
     } 
 });

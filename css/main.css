@@ -110,7 +110,7 @@ html{
 /* centre text */
 .landing-text-container {
     margin: auto;
-    animation: landing-text 2s;
+    animation: landing-text 1.5s;
     width: 95%;
     display: none;
 }
@@ -280,7 +280,7 @@ html{
 @keyframes landing-text {
     from {
         opacity:0;
-        transform: translate(0, 0.8em);
+        transform: translate(0, 1em);
     }
     to {
         opacity:1;
