@@ -150,8 +150,11 @@ html{
     content: 'view my card';
     font-size: 1.6vw;
     color: white;
-    /*animation: fadein-nametag 0.5s;*/
     margin: auto;
+}
+
+#typewriter {
+    font-style: normal;
 }
 
 /* general modal style */

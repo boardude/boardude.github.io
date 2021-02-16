@@ -22,6 +22,37 @@ window.addEventListener('scroll', function() {
     } 
 });
 
+/* LANDING TEXT TYPEWRITER EFFECT */
+var typeText = [
+    "a web developer",
+    "a softare engineer",
+    "an avid learner",
+    "a golfer"
+];
+
+function typewriter(arr, charIndex, wordIndex, charDelay) {
+    var destination = document.getElementById("typewriter");
+    destination.innerHTML = arr[wordIndex].substring(0, charIndex) + "|";
+    if (charIndex++ == arr[wordIndex].length) { // end of a word
+        if (wordIndex == arr.length) { // end of the list of words
+            setTimeout(function() {
+                typewriter(arr, 0, 0, charDelay)
+            }, 2000);
+        } else {
+            setTimeout(function() {
+                typewriter(arr, 0, ++wordIndex, charDelay)
+            }, 2000);
+        }
+    } else { // in the middle of typing a word
+        setTimeout(function() {
+            typewriter(arr, charIndex, wordIndex, charDelay)
+        }, charDelay);
+    }
+}
+
+
+typewriter(typeText, 0, 0, 100);
+
 /* MODALS */
 /** general rules **/
 // When the user clicks anywhere outside of the modal, close it
