@@ -16,16 +16,19 @@ window.onresize = function() {
 
 /* LOAD ON SCROLL */
 var landingText = document.getElementsByClassName("landing-text-container")[0];
-window.addEventListener('scroll', function() {
+var onScroll = function() {
     if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
         landingText.style.display = 'block';
-    } 
-});
+    }
+};
+window.addEventListener('scroll', onScroll);
+
+
 
 /* LANDING TEXT TYPEWRITER EFFECT */
 var typeText = [
     "a web developer",
-    "a softare engineer",
+    "a software engineer",
     "an avid learner",
     "a golfer"
 ];
@@ -34,13 +37,14 @@ function typewriter(arr, charIndex, wordIndex, charDelay) {
     var destination = document.getElementById("typewriter");
     destination.innerHTML = arr[wordIndex].substring(0, charIndex) + "|";
     if (charIndex++ == arr[wordIndex].length) { // end of a word
+        wordIndex++;
         if (wordIndex == arr.length) { // end of the list of words
             setTimeout(function() {
-                typewriter(arr, 0, 0, charDelay)
+                typewriter(arr, 0, 0, 100)
             }, 2000);
         } else {
             setTimeout(function() {
-                typewriter(arr, 0, ++wordIndex, charDelay)
+                typewriter(arr, 0, wordIndex, charDelay)
             }, 2000);
         }
     } else { // in the middle of typing a word
@@ -49,7 +53,6 @@ function typewriter(arr, charIndex, wordIndex, charDelay) {
         }, charDelay);
     }
 }
-
 
 typewriter(typeText, 0, 0, 100);
 
