@@ -280,7 +280,7 @@ html{
 @keyframes landing-text {
     from {
         opacity:0;
-        transform: translate(0, 1em);
+        transform: translate(0, -1em);
     }
     to {
         opacity:1;
