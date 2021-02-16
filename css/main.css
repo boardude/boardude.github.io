@@ -110,8 +110,9 @@ html{
 /* centre text */
 .landing-text-container {
     margin: auto;
-    animation: fadein 2s;
+    animation: landing-text 2s;
     width: 95%;
+    display: none;
 }
 
 .landing-text {
@@ -276,12 +277,14 @@ html{
 }
 
 /****** KEYFRAMES ******/
-@keyframes fadein {
+@keyframes landing-text {
     from {
         opacity:0;
+        transform: translate(0, 0.8em);
     }
     to {
         opacity:1;
+        transform: translate(0, 0);
     }
 }
 

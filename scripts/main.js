@@ -6,12 +6,21 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 // When window resizes, reset height to 100vh to prevent excessive
 // height changes from causing visual disfigurement
 var resized = false;
+var preLanding = document.getElementById("pre-landing")
 window.onresize = function() {
     if (!resized) {
-        document.getElementById("pre-landing").style.height = '100vh';
+        preLanding.style.height = '100vh';
     }
     resized = true;
 }
+
+/* LOAD ON SCROLL */
+var landingText = document.getElementsByClassName("landing-text-container")[0];
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= preLanding.clientHeight * 0.5) {
+        landingText.style.display = 'block';
+    } 
+});
 
 /* MODALS */
 /** general rules **/
