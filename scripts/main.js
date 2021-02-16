@@ -19,7 +19,8 @@ var typeText = [
     "a web developer",
     "a software engineer",
     "an avid learner",
-    "a golfer"
+    "a golfer",
+    "a human"
 ];
 
 var typewriter = function(arr, charIndex, wordIndex, charDelay) {
@@ -66,7 +67,7 @@ var onScroll = function() {
     var landingText = document.getElementsByClassName("landing-text-container")[0];
     if (window.pageYOffset >= preLanding.clientHeight * 0.6) {
         landingText.style.display = 'block';
-        setTimeout(typewriterOnce, 2000);
+        setTimeout(typewriterOnce, 1500);
     }
 };
 window.addEventListener('scroll', onScroll);
