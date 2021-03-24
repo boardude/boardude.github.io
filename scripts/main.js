@@ -16,9 +16,9 @@ window.onresize = function() {
 
 /* LANDING TEXT TYPEWRITER EFFECT */
 var typeText = [
-    "a fullstack developer",
     "a software engineer",
-    "a web designer",
+    "a data engineer",
+    "a fullstack developer",
     "an avid learner",
     "a golfer",
     "an artist",
