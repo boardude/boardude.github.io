@@ -28,14 +28,14 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: white;
     transition: height 0.35s ease-out;
 }
 
 .pre-logo-container {
-    width: 25vmax;
+    width: 15vmax;
     margin: auto;
-    animation: pre-logo-container 5s;
+    pointer-events: auto;
 }
 
 .pre-logo {
@@ -45,46 +45,17 @@ html{
     transition: 0.35s ease-out;
 }
 
-.pre-logo:hover {
-    filter: invert(0);
-}
-
-.pre-logo-container::before {
-    content: 'how did you find this?';
-    color: transparent;
-    display: none;
-    font-size: 1.5vmax;
-}
-
-.pre-logo-container:hover::before {
-    display: block;
-}
-
-.pre-logo-container::after {
-    content: 'Dedicated to bring change.';
-    display: none;
-    color: white;
-    font-family: 'Courier New';
-    font-size: 1.5vmax;
-    text-align: center;
-    animation: fadein-slogan 0.35s ease-out;
-}
-
-.pre-logo-container:hover::after {
-    display: block;
-}
-
 /****** scroll arrow ******/  
 .scroll-arrow-container {
-    animation: scroll-arrow 5.5s;
+    animation: scroll-arrow 2.5s;
 }
 
 .scroll-arrow {
     box-sizing: border-box;
-    height: 3.2vmax;
-    width: 3.2vmax;
+    height: 1.8vmax;
+    width: 1.8vmax;
     border-style: solid;
-    border-color: white;
+    border-color: #979797;
     border-width: 0 .28em .28em 0;
     transform: rotate(45deg);
     transition: 0.15s ease-out;
@@ -93,8 +64,8 @@ html{
 
 .scroll-arrow:hover {
     border-color: #ff605c;
-    height: 4vmax;
-    width: 4vmax;
+    height: 2.2vmax;
+    width: 2.2vmax;
 }
 
 /****** LANDING ******/
@@ -179,8 +150,8 @@ html{
     margin: auto; /* centre item */
     padding: 20px;
     border-radius: 1em;
-    width: 47vw; /* Could be more or less, depending on screen size */
-    height: 28vw; /* maintain ~1.586 aspect ratio */
+    width: 35vw; /* Could be more or less, depending on screen size */
+    height: 22.1vw; /* maintain ~1.586 aspect ratio */
     position: relative;
     display: flex;
     animation: fadein-nametag-modal 0.5s;
@@ -190,7 +161,7 @@ html{
     position: absolute;
     top: -.73em;
     left: .35em;
-    font-size: 6vw;
+    font-size: 4.5vw;
     color: white;
     animation: fadein-nametag-modal 0.5s;
 }
@@ -199,7 +170,7 @@ html{
     position: absolute;
     bottom: 1.5em;
     right: 1.666667em;
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: white;
     animation: fadein-nametag-modal 0.5s;
     text-decoration: none;
@@ -212,9 +183,9 @@ html{
 
 #nametagBL {
     position: absolute;
-    bottom: .5em;
-    left: .5em;
-    font-size: 5vw;
+    bottom: .6em;
+    left: .6em;
+    font-size: 3vw;
     background-color: white;
     width: .5em;
     height: .15em;
@@ -225,7 +196,7 @@ html{
     position: absolute;
     top: .5em;
     right: .5em;
-    font-size: 5vw;
+    font-size: 3vw;
     background-color:#ff605c;
     width: .5em;
     height: .5em;
@@ -235,7 +206,7 @@ html{
 }
 
 #nametagCloseX {
-    font-size: 2vw;
+    font-size: 1.2vw;
     color: rgba(0, 0, 0, 0.65);
     display: none;
     text-align: center;
@@ -244,14 +215,14 @@ html{
 
 #nametagSocials {
     width: 85%;
-    margin: 26% auto;
+    margin: 30% auto;
     display: flex;
     animation: fadein-nametag-modal 0.5s;
 }
 
 #nametagEmail, #nametagLI, #nametagGH {
     margin: auto;
-    width: 6.5vw;
+    width: 4vw;
     filter: invert(1);
     text-decoration: none;
     font-size: 2vw;
@@ -261,7 +232,7 @@ html{
 .tooltip {
     display: none;
     margin: auto;
-    font-size: 1.5vw;
+    font-size: .8vw;
     color: black;
     text-align: center;
     width: 100%;
@@ -289,18 +260,6 @@ html{
         opacity:1;
         transform: translate(0, 0);
     }
-}
-
-@keyframes fadein-slogan {
-    0% {
-        opacity:0;
-        transform: translate(0, -0.8em);
-    }
-
-    100% {
-        opacity:1;
-        transform: translate(0, 0);
-    } 
 }
 
 @keyframes fadein-nametag-modal {
@@ -344,37 +303,9 @@ html{
     }  
 }
 
-/* used to prevent premature hovering over logo which causes visually 
-unappealing transition*/
-@keyframes pre-logo-container {
-    0% {
-        pointer-events: none;
-    }
-
-    99% {
-        pointer-events: none;
-    }
-
-    100% {
-        pointer-events: auto;
-    }
-}
-
 @keyframes pre-logo {
     0% {
-        opacity: 0;
-        filter: invert(1);
         border-radius: 50%;
-    }
-
-    50% {
-        filter: invert(0);
-        opacity: 1;
-    }
-
-    100% {
-        border-radius: 5%;
-        filter: invert(1);
     }
 }
 
@@ -386,21 +317,43 @@ unappealing transition*/
     }
 }
 
-/* To prevent text from wrapping on narrow displays*/
-@media (max-aspect-ratio: 654/1106) {
-
-}
-
 /* Too wide viewports */
 @media (min-aspect-ratio: 880/324) {
     /*.landing-text font size responds to viewport height*/
     .landing-text {
         font-size: 13.5vh;
     }
+    .nametag::before {
+        width: 6.5vh;
+        height: 6.5vh;
+        font-size: 4vh;
+    }
+
+    .nametag:hover::before {
+        height: 6.5vh;
+        font-size: 4vh;
+    }
 }
 
 /* Not wide enough but not portrait viewports */
 @media (max-aspect-ratio: 10/7) {
+    /* increase pre-logo size */
+    .pre-logo-container {
+        width: 25vw;
+    }
+
+    /* increase scroll-arrow size */
+    .scroll-arrow {
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .scroll-arrow:hover {
+        height: 3.8vw;
+        width: 3.8vw;
+    }
+
+
     /* increase font-size of landing */
     /* mulitply by 8/5 (new/original font-size) for all below */
     .landing-text {
@@ -475,7 +428,18 @@ unappealing transition*/
 
     /* increase pre-logo size */
     .pre-logo-container {
-        width: 40vmax;
+        width: 40vw;
+    }
+
+    /* increase scroll-arrow size */
+    .scroll-arrow {
+        height: 6vw;
+        width: 6vw;
+    }
+
+    .scroll-arrow:hover {
+        height: 7vw;
+        width: 7vw;
     }
 
     .pre-logo-container:before {
@@ -524,6 +488,7 @@ unappealing transition*/
 
 /* Portrait viewports*/
 @media (max-aspect-ratio: 1/1) and (max-width: 768px) {
+
     /* widen the nametag modal */
     #nametagCard {
         width: 80vw;
